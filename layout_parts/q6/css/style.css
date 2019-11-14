@@ -2,18 +2,18 @@
 
 /* 回答はここに書いてね */
 
-.q6_1align{
+.q6_align{
   text-align: center;
 }
 
-.q6_1align_child{
+.q6_align_child{
   display:inline-block;
   padding: 10px 0;
   width:90px;
   background-color: #e6f2ff;
 }
 
-.q6_1margin{
+.q6_margin{
   display: block;
   margin: 0 auto;
   width: 90px;
@@ -49,14 +49,25 @@
   background-color:#fff;
 }
 
-.stable{
+.is-stable{
   position: relative;
-  margin: 0 auto;
-  top:82px;
+}
+
+.stable{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.is-flexible{
+  position: relative;
 }
 
 .flexible{
-  position: relative;
+  position: absolute;
   top:50%;
   left:50%;
   transform: translateY(-50%) translateX(-50%);
