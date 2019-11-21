@@ -7,7 +7,7 @@
   width:100%;
 }
 
-.ptable th,td{
+.ptable th,.ptable td{
   border:solid #dedede 1px;
   padding:10px 0;
   text-align: center;
