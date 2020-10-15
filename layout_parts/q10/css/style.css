@@ -12,15 +12,16 @@
   line-height: 16px;
 }
 
-.hukidashi::after,.hukidashi::before{
+.hukidashi::after,
+.hukidashi::before{
   content:"";
   position: absolute;
+  margin-left: -15px;
 }
 
 .hukidashi::before {
   bottom: -47px;
   left: 45px;
-  margin-left: -15px;
   border: 25px solid transparent;
   border-top: 25px solid #FFF;
   z-index: 2;
@@ -29,7 +30,6 @@
 .hukidashi::after {
   bottom: -60px;
   left: 40px;
-  margin-left: -15px;
   border: 30px solid transparent;
   border-top: 30px solid #222;
   z-index: 1;
