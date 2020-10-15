@@ -2,26 +2,21 @@
 
 /* 回答はここに書いてね */
 
-.f__box__l{
+.f__box{
   float: left;
   width: 225px;
   font-size:16px;
   box-sizing: border-box;
   padding:10px;
+  margin-left: 50px;
   background-color: #fff;
 }
 
-.f__box__r{
-  float: left;
-  width:225px;
-  margin-left: 50px;
-  font-size:16px;
-  box-sizing: border-box;
-  padding:10px;
-  background-color:#fff;
+.f__box:first-child{
+  margin-left:0 ;
 }
 
-.f__inner:after {
+.f__inner::after {
   content: "";
   display: block;
   clear: both;
@@ -41,13 +36,13 @@
   display:table-cell;
   width:225px;
   background-clip: padding-box;
-  border-right:50px solid transparent;
+  padding-left:50px;
   text-align: center;
   vertical-align: middle;
 }
 
-.table__box:last-child{
-  border-right:none;
+.table__box:first-child{
+  padding-left:0;
 }
 
 .q7__inline__container{
@@ -56,6 +51,7 @@
 
 .q7__inline{
   display: inline-block;
+  margin-left:50px;
   width:225px;
   box-sizing: border-box;
   vertical-align: middle;
@@ -63,7 +59,7 @@
 }
 
 .q7__inline:first-child{
-  margin-right:50px;
+  margin-left:0;
 }
 
 .q7__flex__container{
@@ -86,7 +82,6 @@
   width:300px;
   box-sizing: border-box;
   display: inline-block;
-  margin-right: 50px;
   font-size:16px;
   vertical-align: top;
 }
@@ -96,7 +91,7 @@
   display:inline-block;
   width:100%;
   font-size: 16px;
-  margin-left: -350px;
+  margin-left: -300px;
   padding-left:350px;
   vertical-align: top;
 }
